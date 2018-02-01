@@ -95,6 +95,7 @@ namespace Mod2
                     DrawMod();
                     pointsNum++;
                 }
+                pointsNum--;//This resets the pointsNum value after the last animation
                 randCheckBox.Checked = false;
             }
         }
