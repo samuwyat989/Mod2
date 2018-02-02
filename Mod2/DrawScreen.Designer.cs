@@ -29,111 +29,124 @@
         private void InitializeComponent()
         {
             this.randCheckBox = new System.Windows.Forms.CheckBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.randLabel = new System.Windows.Forms.Label();
             this.randColourButton = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.customLabel = new System.Windows.Forms.Label();
             this.customButton = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.greenLabel = new System.Windows.Forms.Label();
+            this.blueLabel = new System.Windows.Forms.Label();
             this.redLabel = new System.Windows.Forms.Label();
             this.greenButton = new System.Windows.Forms.Button();
             this.blueButton = new System.Windows.Forms.Button();
             this.redButton = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.colourLabel = new System.Windows.Forms.Label();
             this.animationLabel = new System.Windows.Forms.Label();
             this.animationRange = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.directionLabel = new System.Windows.Forms.Label();
+            this.multiplyLabel = new System.Windows.Forms.Label();
+            this.pointsLabel = new System.Windows.Forms.Label();
             this.multiplyer = new System.Windows.Forms.NumericUpDown();
             this.numberOfPoints = new System.Windows.Forms.NumericUpDown();
             this.customColDialog = new System.Windows.Forms.ColorDialog();
+            this.rotationBar = new System.Windows.Forms.TrackBar();
+            this.rotationLabel = new System.Windows.Forms.Label();
+            this.rotationValLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.animationRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.multiplyer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numberOfPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rotationBar)).BeginInit();
             this.SuspendLayout();
             // 
             // randCheckBox
             // 
             this.randCheckBox.AutoSize = true;
-            this.randCheckBox.Location = new System.Drawing.Point(435, 467);
+            this.randCheckBox.Location = new System.Drawing.Point(652, 718);
+            this.randCheckBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.randCheckBox.Name = "randCheckBox";
-            this.randCheckBox.Size = new System.Drawing.Size(191, 17);
+            this.randCheckBox.Size = new System.Drawing.Size(163, 24);
             this.randCheckBox.TabIndex = 55;
-            this.randCheckBox.Text = "Randomize colour during animation";
+            this.randCheckBox.Text = "Randomize colour";
             this.randCheckBox.UseVisualStyleBackColor = true;
             // 
-            // label12
+            // randLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(658, 181);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 13);
-            this.label12.TabIndex = 54;
-            this.label12.Text = "RANDOM";
+            this.randLabel.AutoSize = true;
+            this.randLabel.Location = new System.Drawing.Point(973, 278);
+            this.randLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.randLabel.Name = "randLabel";
+            this.randLabel.Size = new System.Drawing.Size(80, 20);
+            this.randLabel.TabIndex = 54;
+            this.randLabel.Text = "RANDOM";
             // 
             // randColourButton
             // 
             this.randColourButton.BackColor = System.Drawing.Color.Gainsboro;
-            this.randColourButton.Location = new System.Drawing.Point(633, 178);
+            this.randColourButton.Location = new System.Drawing.Point(936, 274);
+            this.randColourButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.randColourButton.Name = "randColourButton";
-            this.randColourButton.Size = new System.Drawing.Size(19, 19);
+            this.randColourButton.Size = new System.Drawing.Size(28, 29);
             this.randColourButton.TabIndex = 53;
             this.randColourButton.UseVisualStyleBackColor = false;
             this.randColourButton.Click += new System.EventHandler(this.randColourButton_Click);
             // 
-            // label11
+            // customLabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(658, 156);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 13);
-            this.label11.TabIndex = 52;
-            this.label11.Text = "CUSTOM";
+            this.customLabel.AutoSize = true;
+            this.customLabel.Location = new System.Drawing.Point(973, 240);
+            this.customLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.customLabel.Name = "customLabel";
+            this.customLabel.Size = new System.Drawing.Size(77, 20);
+            this.customLabel.TabIndex = 52;
+            this.customLabel.Text = "CUSTOM";
             // 
             // customButton
             // 
             this.customButton.BackColor = System.Drawing.Color.Gainsboro;
-            this.customButton.Location = new System.Drawing.Point(633, 153);
+            this.customButton.Location = new System.Drawing.Point(936, 235);
+            this.customButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customButton.Name = "customButton";
-            this.customButton.Size = new System.Drawing.Size(19, 19);
+            this.customButton.Size = new System.Drawing.Size(28, 29);
             this.customButton.TabIndex = 51;
             this.customButton.UseVisualStyleBackColor = false;
             this.customButton.Click += new System.EventHandler(this.customButton_Click);
             // 
-            // label9
+            // greenLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(658, 131);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 13);
-            this.label9.TabIndex = 48;
-            this.label9.Text = "GREEN";
+            this.greenLabel.AutoSize = true;
+            this.greenLabel.Location = new System.Drawing.Point(973, 202);
+            this.greenLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.greenLabel.Name = "greenLabel";
+            this.greenLabel.Size = new System.Drawing.Size(67, 20);
+            this.greenLabel.TabIndex = 48;
+            this.greenLabel.Text = "GREEN";
             // 
-            // label8
+            // blueLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(658, 106);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 47;
-            this.label8.Text = "BLUE";
+            this.blueLabel.AutoSize = true;
+            this.blueLabel.Location = new System.Drawing.Point(973, 163);
+            this.blueLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.blueLabel.Name = "blueLabel";
+            this.blueLabel.Size = new System.Drawing.Size(52, 20);
+            this.blueLabel.TabIndex = 47;
+            this.blueLabel.Text = "BLUE";
             // 
             // redLabel
             // 
             this.redLabel.AutoSize = true;
-            this.redLabel.Location = new System.Drawing.Point(658, 78);
+            this.redLabel.Location = new System.Drawing.Point(973, 120);
+            this.redLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.redLabel.Name = "redLabel";
-            this.redLabel.Size = new System.Drawing.Size(30, 13);
+            this.redLabel.Size = new System.Drawing.Size(44, 20);
             this.redLabel.TabIndex = 44;
             this.redLabel.Text = "RED";
             // 
             // greenButton
             // 
             this.greenButton.BackColor = System.Drawing.Color.Gainsboro;
-            this.greenButton.Location = new System.Drawing.Point(633, 128);
+            this.greenButton.Location = new System.Drawing.Point(936, 197);
+            this.greenButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.greenButton.Name = "greenButton";
-            this.greenButton.Size = new System.Drawing.Size(19, 19);
+            this.greenButton.Size = new System.Drawing.Size(28, 29);
             this.greenButton.TabIndex = 41;
             this.greenButton.UseVisualStyleBackColor = false;
             this.greenButton.Click += new System.EventHandler(this.greenButton_Click);
@@ -141,46 +154,51 @@
             // blueButton
             // 
             this.blueButton.BackColor = System.Drawing.Color.Gainsboro;
-            this.blueButton.Location = new System.Drawing.Point(633, 103);
+            this.blueButton.Location = new System.Drawing.Point(936, 158);
+            this.blueButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.blueButton.Name = "blueButton";
-            this.blueButton.Size = new System.Drawing.Size(19, 19);
+            this.blueButton.Size = new System.Drawing.Size(28, 29);
             this.blueButton.TabIndex = 40;
             this.blueButton.UseVisualStyleBackColor = false;
             this.blueButton.Click += new System.EventHandler(this.blueButton_Click);
             // 
             // redButton
             // 
-            this.redButton.BackColor = System.Drawing.Color.Gainsboro;
-            this.redButton.Location = new System.Drawing.Point(633, 78);
+            this.redButton.BackColor = System.Drawing.Color.Red;
+            this.redButton.Location = new System.Drawing.Point(936, 120);
+            this.redButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.redButton.Name = "redButton";
-            this.redButton.Size = new System.Drawing.Size(19, 19);
+            this.redButton.Size = new System.Drawing.Size(28, 29);
             this.redButton.TabIndex = 37;
             this.redButton.UseVisualStyleBackColor = false;
             this.redButton.Click += new System.EventHandler(this.redButton_Click);
             // 
-            // label5
+            // colourLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(629, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 20);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Choose Colour";
+            this.colourLabel.AutoSize = true;
+            this.colourLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colourLabel.Location = new System.Drawing.Point(930, 75);
+            this.colourLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.colourLabel.Name = "colourLabel";
+            this.colourLabel.Size = new System.Drawing.Size(175, 29);
+            this.colourLabel.TabIndex = 36;
+            this.colourLabel.Text = "Choose Colour";
             // 
             // animationLabel
             // 
             this.animationLabel.AutoSize = true;
             this.animationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.animationLabel.Location = new System.Drawing.Point(15, 488);
+            this.animationLabel.Location = new System.Drawing.Point(22, 751);
+            this.animationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.animationLabel.Name = "animationLabel";
-            this.animationLabel.Size = new System.Drawing.Size(414, 20);
+            this.animationLabel.Size = new System.Drawing.Size(620, 29);
             this.animationLabel.TabIndex = 35;
             this.animationLabel.Text = "Animates from \'Number of Points\' to this number of points";
             // 
             // animationRange
             // 
-            this.animationRange.Location = new System.Drawing.Point(19, 466);
+            this.animationRange.Location = new System.Drawing.Point(28, 717);
+            this.animationRange.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.animationRange.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -192,7 +210,7 @@
             0,
             0});
             this.animationRange.Name = "animationRange";
-            this.animationRange.Size = new System.Drawing.Size(410, 20);
+            this.animationRange.Size = new System.Drawing.Size(615, 26);
             this.animationRange.TabIndex = 34;
             this.animationRange.Value = new decimal(new int[] {
             11,
@@ -202,37 +220,41 @@
             this.animationRange.KeyDown += new System.Windows.Forms.KeyEventHandler(this.animationRange_KeyDown);
             this.animationRange.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.animationRange_KeyPress);
             // 
-            // label3
+            // directionLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(284, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(340, 20);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Press enter when in one of the boxes to redraw";
+            this.directionLabel.AutoSize = true;
+            this.directionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.directionLabel.Location = new System.Drawing.Point(426, 23);
+            this.directionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.directionLabel.Name = "directionLabel";
+            this.directionLabel.Size = new System.Drawing.Size(515, 29);
+            this.directionLabel.TabIndex = 33;
+            this.directionLabel.Text = "Press enter when in one of the boxes to redraw";
             // 
-            // label2
+            // multiplyLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(178, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Multiplier";
+            this.multiplyLabel.AutoSize = true;
+            this.multiplyLabel.Location = new System.Drawing.Point(267, 58);
+            this.multiplyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.multiplyLabel.Name = "multiplyLabel";
+            this.multiplyLabel.Size = new System.Drawing.Size(71, 20);
+            this.multiplyLabel.TabIndex = 32;
+            this.multiplyLabel.Text = "Multiplier";
             // 
-            // label1
+            // pointsLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 13);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Number of Points";
+            this.pointsLabel.AutoSize = true;
+            this.pointsLabel.Location = new System.Drawing.Point(54, 58);
+            this.pointsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pointsLabel.Name = "pointsLabel";
+            this.pointsLabel.Size = new System.Drawing.Size(131, 20);
+            this.pointsLabel.TabIndex = 31;
+            this.pointsLabel.Text = "Number of Points";
             // 
             // multiplyer
             // 
-            this.multiplyer.Location = new System.Drawing.Point(145, 15);
+            this.multiplyer.Location = new System.Drawing.Point(218, 23);
+            this.multiplyer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.multiplyer.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -244,7 +266,7 @@
             0,
             0});
             this.multiplyer.Name = "multiplyer";
-            this.multiplyer.Size = new System.Drawing.Size(120, 20);
+            this.multiplyer.Size = new System.Drawing.Size(180, 26);
             this.multiplyer.TabIndex = 30;
             this.multiplyer.Value = new decimal(new int[] {
             2,
@@ -256,7 +278,8 @@
             // 
             // numberOfPoints
             // 
-            this.numberOfPoints.Location = new System.Drawing.Point(19, 15);
+            this.numberOfPoints.Location = new System.Drawing.Point(28, 23);
+            this.numberOfPoints.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numberOfPoints.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -268,7 +291,7 @@
             0,
             0});
             this.numberOfPoints.Name = "numberOfPoints";
-            this.numberOfPoints.Size = new System.Drawing.Size(120, 20);
+            this.numberOfPoints.Size = new System.Drawing.Size(180, 26);
             this.numberOfPoints.TabIndex = 29;
             this.numberOfPoints.Value = new decimal(new int[] {
             10,
@@ -278,36 +301,72 @@
             this.numberOfPoints.KeyDown += new System.Windows.Forms.KeyEventHandler(this.numberOfPoints_KeyDown);
             this.numberOfPoints.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numberOfPoints_KeyPress);
             // 
+            // rotationBar
+            // 
+            this.rotationBar.Location = new System.Drawing.Point(936, 379);
+            this.rotationBar.Maximum = 0;
+            this.rotationBar.Name = "rotationBar";
+            this.rotationBar.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.rotationBar.Size = new System.Drawing.Size(69, 310);
+            this.rotationBar.TabIndex = 56;
+            this.rotationBar.Scroll += new System.EventHandler(this.rotationBar_Scroll);
+            // 
+            // rotationLabel
+            // 
+            this.rotationLabel.AutoSize = true;
+            this.rotationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rotationLabel.Location = new System.Drawing.Point(931, 347);
+            this.rotationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.rotationLabel.Name = "rotationLabel";
+            this.rotationLabel.Size = new System.Drawing.Size(192, 29);
+            this.rotationLabel.TabIndex = 57;
+            this.rotationLabel.Text = "Choose Rotation";
+            // 
+            // rotationValLabel
+            // 
+            this.rotationValLabel.AutoSize = true;
+            this.rotationValLabel.Location = new System.Drawing.Point(931, 692);
+            this.rotationValLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.rotationValLabel.Name = "rotationValLabel";
+            this.rotationValLabel.Size = new System.Drawing.Size(71, 20);
+            this.rotationValLabel.TabIndex = 58;
+            this.rotationValLabel.Text = "VALUE :";
+            // 
             // DrawScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.rotationValLabel);
+            this.Controls.Add(this.rotationLabel);
+            this.Controls.Add(this.rotationBar);
             this.Controls.Add(this.randCheckBox);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.randLabel);
             this.Controls.Add(this.randColourButton);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.customLabel);
             this.Controls.Add(this.customButton);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.greenLabel);
+            this.Controls.Add(this.blueLabel);
             this.Controls.Add(this.redLabel);
             this.Controls.Add(this.greenButton);
             this.Controls.Add(this.blueButton);
             this.Controls.Add(this.redButton);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.colourLabel);
             this.Controls.Add(this.animationLabel);
             this.Controls.Add(this.animationRange);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.directionLabel);
+            this.Controls.Add(this.multiplyLabel);
+            this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.multiplyer);
             this.Controls.Add(this.numberOfPoints);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DrawScreen";
-            this.Size = new System.Drawing.Size(770, 527);
+            this.Size = new System.Drawing.Size(1155, 811);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.animationRange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.multiplyer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numberOfPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rotationBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,24 +375,27 @@
         #endregion
 
         private System.Windows.Forms.CheckBox randCheckBox;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label randLabel;
         private System.Windows.Forms.Button randColourButton;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label customLabel;
         private System.Windows.Forms.Button customButton;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label greenLabel;
+        private System.Windows.Forms.Label blueLabel;
         private System.Windows.Forms.Label redLabel;
         private System.Windows.Forms.Button greenButton;
         private System.Windows.Forms.Button blueButton;
         private System.Windows.Forms.Button redButton;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label colourLabel;
         private System.Windows.Forms.Label animationLabel;
         private System.Windows.Forms.NumericUpDown animationRange;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label directionLabel;
+        private System.Windows.Forms.Label multiplyLabel;
+        private System.Windows.Forms.Label pointsLabel;
         private System.Windows.Forms.NumericUpDown multiplyer;
         private System.Windows.Forms.NumericUpDown numberOfPoints;
         private System.Windows.Forms.ColorDialog customColDialog;
+        private System.Windows.Forms.TrackBar rotationBar;
+        private System.Windows.Forms.Label rotationLabel;
+        private System.Windows.Forms.Label rotationValLabel;
     }
 }

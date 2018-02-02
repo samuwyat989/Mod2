@@ -17,14 +17,14 @@ namespace Mod2
             InitializeComponent();
         }
 
-        int pointsNum, multiply, radius = 200, p2, anRnge, R, G, B;
+        int pointsNum, multiply, radius = 200, p2, anRnge, R, G, B, rotation;
         double cycle;
         Random rand = new Random();
         Point origin = new Point(300, 250);
         Point[] drawPoints;
         Graphics g, g2;
         Bitmap bm;
-        Color drawColour;
+        Color drawColour, randColour;
         List<Button> colourButtons;
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,11 +33,12 @@ namespace Mod2
             bm = new Bitmap(this.Width, this.Height);
             g2 = Graphics.FromImage(bm);
             drawColour = Color.Red;
+            randCheckBox.Text = "Randomize colour\nduring animation";
             colourButtons = new List<Button>(new Button[] { redButton, greenButton, blueButton, customButton, randColourButton });
         }
 
         private void numberOfPoints_KeyPress(object sender, KeyPressEventArgs e)
-        {         
+        {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) //only allows numbers to be typed
             {
                 e.Handled = true;
@@ -65,6 +66,7 @@ namespace Mod2
             if (e.KeyCode == Keys.Enter)
             {
                 pointsNum = Convert.ToInt32(numberOfPoints.Value);
+                rotationBar.Maximum = pointsNum - 1;
                 multiply = Convert.ToInt32(multiplyer.Value);
                 FindPoints();
                 DrawMod();
@@ -97,6 +99,7 @@ namespace Mod2
                 }
                 pointsNum--;//This resets the pointsNum value after the last animation
                 randCheckBox.Checked = false;
+                rotationBar.Maximum = pointsNum - 1;
             }
         }
 
@@ -133,7 +136,7 @@ namespace Mod2
                 if (randCheckBox.Checked == true)
                 {
                     RandomizeColour();
-                    randPen = new Pen(Color.FromArgb(R, G, B));
+                    randPen = new Pen(randColour);
                     g2.DrawLine(randPen, drawPoints[i].X, drawPoints[i].Y, drawPoints[p2].X, drawPoints[p2].Y);
                 }
                 else { g2.DrawLine(drawPen, drawPoints[i].X, drawPoints[i].Y, drawPoints[p2].X, drawPoints[p2].Y); }
@@ -195,7 +198,7 @@ namespace Mod2
         private void randColourButton_Click(object sender, EventArgs e)
         {
             RandomizeColour();
-            randColourButton.BackColor = drawColour;
+            randColourButton.BackColor = drawColour = Color.FromArgb(R,B,G);
             FindPoints();
             DrawMod();
             for (int i = 0; i < colourButtons.Count(); i++)
@@ -208,8 +211,32 @@ namespace Mod2
             R = rand.Next(1, 256);
             G = rand.Next(1, 256);
             B = rand.Next(1, 256);
-            drawColour = Color.FromArgb(R, G, B);
+            randColour = Color.FromArgb(R, G, B);
         }
         #endregion
+
+        private void rotationBar_Scroll(object sender, EventArgs e)
+        {
+            FindPoints();
+            rotation = rotationBar.Value;
+            rotationValLabel.Text = "VALUE : " + rotation.ToString();
+            Point[] rotPoints = new Point[pointsNum];
+            int cycleCount = 0;
+
+            for (int i = 0; i < pointsNum; i++)
+            {
+                if (i + rotation > pointsNum-1)
+                {
+                    rotPoints[i] = drawPoints[pointsNum - (i + rotation - cycleCount)];
+                    cycleCount+=2;
+                }
+                else
+                {
+                    rotPoints[i] = drawPoints[i + rotation];
+                }
+            }
+            drawPoints = rotPoints;
+            DrawMod();
+        }
     }
 }
